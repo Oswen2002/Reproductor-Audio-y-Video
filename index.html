@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/video-player.css">
+  <title>Reproductor de video</title>
+</head>
+<body>
+  <div class="video-player">
+    <div class="video-container">
+      <video id="video" controls>
+        <source id="video-source" src="" type="video/mp4">
+        El Reproductor no soporta ese tipo de formato.
+      </video>
+    </div>
+    <div class="controls">
+      <label for="video-upload" class="button upload-label">Subir video</label>
+      <input type="file" id="video-upload" accept="video/*">
+      <a href="audio-player.html" class="button" id="redirect">Ir al reproductor de audio</a>
+    </div>
+  </div>
+
+  <script src="./src/js/video-player.js"></script>
+</body>
+</html>

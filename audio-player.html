@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/audio-player.css">
+  <title>Reproductor de Audio</title>
+</head>
+<body>
+  <div class="audio-player">
+    <div class="audio-container">
+      <audio id="audio" controls>
+        <source id="audio-source" src="" type="audio/mpeg">
+        Tu navegador no soporta el reproductor de audio.
+      </audio>
+    </div>
+    <div class="controls">
+      <label for="audio-upload" class="button upload-label">Subir audio</label>
+      <input type="file" id="audio-upload" accept="audio/*" style="display: none;">
+      <a href="index.html" class="button" id="back-to-video">Volver al reproductor de video</a>
+    </div>
+  </div>
+
+  <script src="./src/css/audio-player.css"></script>
+</body>
+</html>
